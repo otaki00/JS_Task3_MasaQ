@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("./stacked-waves-haikei.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    font-family: 'Rubik', sans-serif;
+}
+
+header{
+    text-align: center;
+    padding: 50px;
+    color: #fff;
+    margin-bottom: 50px ;
+}
+
+header h1{
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+header h2{
+    text-transform: capitalize;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+header h2 span{
+    text-transform: lowercase;
+    color: rgb(255, 187, 1);
+}
+
+header h1 span {
+    color: rgb(255, 187, 1);
+    font-size: 42px;
+}
+
+form{
+    margin: auto;
+    background-color: #fff;
+    width: 500px;
+    border: 2px solid rgb(0, 204, 255);
+    padding: 50px;
+    border-radius: 5px;
+}
+
+form label{
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(255, 187, 1);
+}
+
+form input{
+    font-size: 20px;
+}

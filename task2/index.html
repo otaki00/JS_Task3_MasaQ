@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"
+    integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="max">
+        max is = <span id="max"></span>
+    </div>
+
+    <div class="min">
+        min is = <span id="min"></span>
+    </div>
+
+    <form onsubmit="return findMinMax()">
+        <div class="mb-3">
+            <label for="numbers" class="form-label">Enter Numbers :</label>
+            <input type="text" class="form-control fs-5" id="numbers" >
+            <div id="textHelp" class="form-text ">Enter series of number(2 3 4 12 ...), to find min and max</div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
+        integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>

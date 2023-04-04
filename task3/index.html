@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css"
+        integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <form onsubmit="return smartSama()">
+        <h2>Enter Values For Test <i class="fa-solid fa-face-laugh-wink"></i></h2>
+        <div class="mb-3">
+            <label for="ageRange" class="form-label">Enter Age : </label>
+            <div class="forRange d-flex ">
+                <input type="range" class="form-range" min="1" max="77" step="1" id="ageRange" onchange="updateRangeValue(this.value, 1);">
+                <span id="rangeValue" class="ms-1"></span>
+            </div>
+
+        </div>
+        <div class="mb-3">
+            <label for="priceRange" class="form-label">Washing Machine Price : </label>
+            <div class="forRange d-flex ">
+                <input type="range" class="form-range" min="1" max="10000" step="100.5" id="priceRange" onchange="updateRangeValue(this.value, 2);">
+                <span id="rangePriceValue" class="ms-1"></span>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="toyPriceRange" class="form-label">Toy Price : </label>
+            <div class="forRange d-flex ">
+                <input type="range" class="form-range" min="0" max="40" step="1" id="toyPriceRange" onchange="updateRangeValue(this.value, 3);">
+                <span id="rangeToyPriceValue" class="ms-1"></span>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <section id="result" class="result">
+        <h2> The Result :</h2>
+        <div class="container">
+            <div id="emoji">
+
+            </div>
+            <p id="resultText"></p>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
+        integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
